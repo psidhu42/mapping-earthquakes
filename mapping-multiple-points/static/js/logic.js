@@ -14,7 +14,8 @@ cityData.forEach(function(city) {
         color: 'orange',
         fillColor: 'orange',
         weight: 4,
-        radius: city.population/100000
+        radius: city.population/100000,
+        dashArray: "2 4"
     })
     .bindPopup("<h2>" + city.city + ", " + city.state + "</h2> <hr> <h3>Population " + city.population.toLocaleString() + "</h3>")
     .addTo(map);
